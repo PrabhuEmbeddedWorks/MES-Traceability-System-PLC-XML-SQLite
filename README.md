@@ -5,7 +5,7 @@ A Linux-based **Manufacturing Execution System (MES)** simulation developed in *
 This project showcases **Industry 4.0 concepts** such as PLC-to-MES communication, quality data logging, XML-based data exchange, and component traceability commonly used in automotive manufacturing environments.
 
 ---
-## Workflow Summary
+## Workflow 
 
 1. Virtual PLC updates machine registers.
 2. MES detects the cycle completion event.
@@ -14,22 +14,6 @@ This project showcases **Industry 4.0 concepts** such as PLC-to-MES communicatio
 5. XML files are validated against the XSD schema.
 6. Valid records are stored in SQLite.
 7. Production history can be queried for traceability.
-
-## Project Architecture
-
-```text
-Virtual PLC (C Structure)
-        ↓
-MES Application (C Program)
-        ↓
-Generate XML File
-        ↓
-Validate XML using XSD
-        ↓
-Store Data in SQLite Database
-        ↓
-Verify using Linux Terminal
-```
 
 ---
 
@@ -47,18 +31,6 @@ must be captured and stored for future quality audits and traceability requireme
 
 This project simulates that workflow.
 
----
-
-## Features
-
-* Virtual PLC register simulation
-* MES cycle completion detection
-* XML generation from machine data
-* XML validation using XSD schema
-* SQLite database integration
-* Manufacturing traceability logging
-* Linux terminal-based execution
-* Industry 4.0 inspired architecture
 
 ---
 
@@ -84,9 +56,8 @@ MES-Traceability-System-PLC-XML-SQLite/
 ├── mes_logger.c          # MES application source code
 ├── production.xsd        # XML schema definition
 ├── production.xml        # Generated XML file
-├── production.db         # SQLite database
-├── mes_logger            # Executable binary
-└── README.md             # Project documentation
+└── production.db         # SQLite database
+
 ```
 
 ---
@@ -254,20 +225,3 @@ ID  SerialNumber  Torque  OperatorID  Timestamp
 --  ------------  ------- ---------- -------------------
 1   PCB1001       5.25    102         2026-06-09 11:20:15
 ```
-
----
-
-## Skills Demonstrated
-
-* Embedded C Programming
-* Linux Development
-* SQLite Database Integration
-* XML Data Handling
-* XSD Validation
-* Manufacturing Traceability Concepts
-* MES Fundamentals
-* Quality Logging Techniques
-* Industry 4.0 Principles
-
----
-
