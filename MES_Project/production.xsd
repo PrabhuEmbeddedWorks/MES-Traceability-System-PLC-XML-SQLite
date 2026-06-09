@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="ProductionData">
+
+        <xsd:complexType>
+
+            <xsd:sequence>
+
+                <xsd:element name="SerialNumber"
+                             type="xsd:string"/>
+
+                <xsd:element name="Torque"
+                             type="xsd:decimal"/>
+
+                <xsd:element name="OperatorID"
+                             type="xsd:int"/>
+
+                <xsd:element name="Timestamp"
+                             type="xsd:string"/>
+
+            </xsd:sequence>
+
+        </xsd:complexType>
+
+    </xsd:element>
+
+</xsd:schema>
